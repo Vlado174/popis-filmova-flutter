@@ -78,7 +78,7 @@ class MovieTile extends StatelessWidget {
           Icon(
             movie.icon,
             size: 32,
-            color: isJoined ? Colors.green : Colors.grey,
+            color: isJoined ? Colors.deepOrange : Colors.grey,
           ),
           const SizedBox(width: 12),
           Expanded(

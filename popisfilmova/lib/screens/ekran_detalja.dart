@@ -24,20 +24,20 @@ class EkranDetalja extends StatelessWidget {
               padding: const EdgeInsets.all(12),
               margin: const EdgeInsets.only(bottom: 16),
               decoration: BoxDecoration(
-                color: Colors.teal.shade50,
+                color: Colors.deepOrange.shade50,
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.teal),
+                border: Border.all(color: Colors.deepOrange),
               ),
               child: Row(
                 children: [
-                  Icon(movie.icon, size: 48, color: Colors.teal),
+                  Icon(movie.icon, size: 48, color: Colors.deepOrange),
                   const SizedBox(width: 12),
                   Expanded(child: Text(movie.description)),
                 ],
               ),
             ),
             Text(
-              movie.description,
+              "Termin: ${movie.schedule}",
               style: Theme.of(context).textTheme.bodyLarge,
             ),
             const SizedBox(height: 24),
