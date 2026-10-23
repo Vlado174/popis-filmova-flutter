@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import "package:popisfilmova/models/movie.dart";
+import "package:popisfilmova/modeli/movie.dart";
 
 class EkranDetalja extends StatelessWidget {
   final Movie movie;
@@ -14,7 +14,10 @@ class EkranDetalja extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(movie.name)),
+      appBar: AppBar(title: Text(movie.name),
+                    backgroundColor: Colors.deepOrange,
+                    foregroundColor: Colors.white,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(

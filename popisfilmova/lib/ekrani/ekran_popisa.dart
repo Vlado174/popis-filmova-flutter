@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
-import "package:popisfilmova/models/movie.dart";
-import "package:popisfilmova/screens/ekran_detalja.dart";
+import "package:popisfilmova/modeli/movie.dart";
+import "package:popisfilmova/ekrani/ekran_detalja.dart";
 
 class EkranPopisa extends StatefulWidget {
   const EkranPopisa({super.key});
@@ -46,7 +46,10 @@ class _EkranPopisaState extends State<EkranPopisa> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: const Text("Popis filmova")),
+      appBar: AppBar(title: const Text("Popis filmova"),
+                    backgroundColor: Colors.deepOrange,
+                    foregroundColor: Colors.white,
+      ),
       body: ListView(padding: const EdgeInsets.all(8), children: tiles),
     );
   }

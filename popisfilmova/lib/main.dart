@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:popisfilmova/screens/ekran_popisa.dart';
+import 'package:popisfilmova/ekrani/ekran_popisa.dart';
 
 void main() {
   runApp(const MyApp());
